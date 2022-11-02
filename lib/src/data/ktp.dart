@@ -92,6 +92,11 @@ class Ktp {
     marriageStat: '',
     occupation: '',
   );
+
+  @override
+  String toString() {
+    return 'Ktp{nik: $nik, name: $name, birthPlace: $birthPlace, birthDate: $birthDate, bloodType: $bloodType, sex: $sex, address: $address, rt: $rt, rw: $rw, kelurahan: $kelurahan, kecamatan: $kecamatan, religion: $religion, marriageStat: $marriageStat, occupation: $occupation, nationality: $nationality, province: $province, city: $city, pictureUrl: $pictureUrl}';
+  }
 }
 
 List<String> blood = [
