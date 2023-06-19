@@ -201,8 +201,10 @@ class KtpOcr {
       ),
       '',
     );
-    final place = removedDate.substring(i + 5);
-    return place.clean([',']);
+    // final place = removedDate.substring(i + 5);
+    // return place.clean([',']);
+    final place = removedDate.substring(i + 5).trim();
+    return place.split(',').first.toUpperCase();
   }
 
   String _parseBlood(Iterable<String> text) {
@@ -222,7 +224,7 @@ class KtpOcr {
     );
     if (i < 0) return '';
 
-    text.removeAt(i);
+    text.removeAt(i).trim();
     // return text.clearJoin([' ']);
     return text.first;
   }
@@ -352,7 +354,7 @@ class KtpOcr {
 
 extension on String {
   String clean([List<String> removeKey = const []]) {
-    final cleaned = replaceAll(':', '');
+    final cleaned = replaceAll(',', '');
     return removeKey
         .fold<String>(
           cleaned,
