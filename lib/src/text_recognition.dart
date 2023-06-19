@@ -223,7 +223,8 @@ class KtpOcr {
     if (i < 0) return '';
 
     text.removeAt(i);
-    return text.clearJoin([' ']);
+    // return text.clearJoin([' ']);
+    return text.first;
   }
 
   String _parseRtRw(String rawText, int i) {
