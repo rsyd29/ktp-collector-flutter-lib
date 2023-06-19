@@ -354,7 +354,7 @@ class KtpOcr {
 
 extension on String {
   String clean([List<String> removeKey = const []]) {
-    final cleaned = replaceAll(',', '');
+    final cleaned = replaceAll(':', '');
     return removeKey
         .fold<String>(
           cleaned,
