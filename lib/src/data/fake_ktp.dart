@@ -42,7 +42,7 @@ mixin FakeKtp {
       occupation: job,
       province: faker.address.state(),
       city: faker.address.city(),
-      pictureUrl: faker.image.unsplash.people(w: 82, h: 82, keyword: 'face'),
+      pictureUrl: faker.image.loremPicsum.image(),
     );
   }
 }

@@ -1,6 +1,6 @@
 name: ktp_scan
 description: A new Flutter package project.
-version: 0.0.2
+version: 0.0.3
 
 environment:
   sdk: ">=2.18.2 <3.0.0"
@@ -10,8 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   intl: ^0.18.1
-  faker_dart: ^0.1.11
-  google_mlkit_text_recognition: ^0.8.1
+  faker_dart: ^0.2.1
+  google_mlkit_text_recognition: ^0.13.0
 
 dev_dependencies:
   flutter_test:
